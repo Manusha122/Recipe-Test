@@ -43,6 +43,9 @@ export default function AuthPage() {
     }
   };
 
+   // ✅ Save token (so it can be used later in protected requests)
+      localStorage.setItem("token", res.data.token);
+
   const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
