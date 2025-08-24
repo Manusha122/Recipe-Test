@@ -4,9 +4,6 @@ import API from "../api";
 const AuthCtx = createContext(null);
 export const useAuth = () => useContext(AuthCtx);
 
-localStorage.setItem("token", res.data.token);
-
-
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
