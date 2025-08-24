@@ -10,7 +10,7 @@ export default API;
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://recipe-test-production.up.railway.app/api",
+  baseURL: "https://recipe-test-production.up.railway.app",
 });
 
 // Attach token to each request if it exists
