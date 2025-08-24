@@ -5,7 +5,7 @@
 //   // withCredentials: true // send cookies
 // });
 
-export default API;
+
 
 import axios from "axios";
 
@@ -22,4 +22,4 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export default API;
+
