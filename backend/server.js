@@ -36,11 +36,4 @@ connectDB().then(() => {
   app.listen(PORT, () => console.log(`Server running on :${PORT}`));
 });
 
-import cors from "cors";
 
-app.use(
-  cors({
-    origin: ["https://recipe-test-production-434b.up.railway.app"], 
-    credentials: true,
-  })
-);
