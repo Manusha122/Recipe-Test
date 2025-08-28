@@ -677,7 +677,7 @@ export default function Favorites() {
           }
         }
         
-        /* Touch device optimizations */
+        /* touch device optimizations */
         @media (hover: none) and (pointer: coarse) {
           .removeButton {
             min-height: 44px !important;
