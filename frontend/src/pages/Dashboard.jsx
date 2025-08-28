@@ -279,15 +279,15 @@ export default function Dashboard() {
           z-index: -1;
         }
 
-        .bg-gradient {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(135deg, 
-            rgba(102, 126, 234, 0.8) 0%, 
-            rgba(118, 75, 162, 0.8) 50%,
-            rgba(255, 154, 158, 0.6) 100%
-          );
-        }
+        // .bg-gradient {
+        //   position: absolute;
+        //   inset: 0;
+        //   background: linear-gradient(135deg, 
+        //     rgba(102, 126, 234, 0.8) 0%, 
+        //     rgba(118, 75, 162, 0.8) 50%,
+        //     rgba(255, 154, 158, 0.6) 100%
+        //   );
+        // }
 
         .bg-pattern {
           position: absolute;

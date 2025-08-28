@@ -19,6 +19,7 @@ app.use(express.json({ limit: "10kb" }));
 app.use(cookieParser());
 app.use(
   cors({
+    // origin: process.env.CLIENT_URL || "http://localhost:5173",
     origin: process.env.CLIENT_URL || "https://recipe-test-production-434b.up.railway.app",
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
