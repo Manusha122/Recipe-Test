@@ -17,7 +17,7 @@ export default function Favorites() {
       const response = await API.get("/api/favorites");
       console.log('API Response:', response); // Debug log
       
-      // Handle different response structures
+      // Handle different response structuress
       const data = response.data || response;
       console.log('Extracted data:', data); // Debug log
       
@@ -561,7 +561,7 @@ export default function Favorites() {
             gap: 16px !important;
           }
           
-          
+
           .mealName {
             text-align: center !important;
             font-size: 17px !important;

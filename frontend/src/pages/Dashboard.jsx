@@ -289,7 +289,6 @@ export default function Dashboard() {
         //   );
         // }
 
-        
         .bg-pattern {
           position: absolute;
           inset: 0;

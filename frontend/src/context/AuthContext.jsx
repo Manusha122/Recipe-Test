@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { API } from "../api";
+// import { API } from "../api";
+import API from "../api";
 
 const AuthCtx = createContext(null);
 export const useAuth = () => useContext(AuthCtx);
@@ -8,7 +9,7 @@ export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // load session if exists
+  // load session if existss
   useEffect(() => {
     (async () => {
       try {
