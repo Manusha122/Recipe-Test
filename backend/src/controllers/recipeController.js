@@ -4,14 +4,14 @@ const API = "https://www.themealdb.com/api/json/v1/1";
 
 export const categories = async (_req, res) => {
   const { data } = await axios.get(`${API}/categories.php`);
-  // pick first 5 categories for UI (you can change)
-  const five = (data.categories || []).slice(0, 5).map(c => ({
+  // pick first 20 categories for UI (you can change)
+  const twenty = (data.categories || []).slice(0, 20).map(c => ({
     id: c.idCategory,
     name: c.strCategory,
     thumb: c.strCategoryThumb,
     description: c.strCategoryDescription
   }));
-  res.json(five);
+  res.json(twenty);
 };
 
 export const byCategory = async (req, res) => {
