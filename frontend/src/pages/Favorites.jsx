@@ -561,6 +561,7 @@ export default function Favorites() {
             gap: 16px !important;
           }
           
+          
           .mealName {
             text-align: center !important;
             font-size: 17px !important;
