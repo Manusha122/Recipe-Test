@@ -6,22 +6,42 @@
 // });
 
 
+// import axios from "axios";
+
+// const api = axios.create({
+//   baseURL: "https://recipe-test-production.up.railway.app",
+// });
+
+// // Automatically attach token if available
+// api.interceptors.request.use((config) => {
+//   const token = localStorage.getItem("token"); // or from context
+//   if (token) {
+//     config.headers.Authorization = `Bearer ${token}`;
+//   }
+//   return config;
+// });
+
+// export default api;
+
+
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "https://recipe-test-production.up.railway.app",
+const API = axios.create({
+  baseURL: "http://localhost:5000",
+  withCredentials: true // send cookies
 });
 
-// Automatically attach token if available
-api.interceptors.request.use((config) => {
-  const token = localStorage.getItem("token"); // or from context
+// Attach Authorization header if token exists
+API.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
   if (token) {
+    config.headers = config.headers || {};
     config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 });
 
-export default api;
+export default API;
 
 
 

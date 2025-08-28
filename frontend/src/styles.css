@@ -10,8 +10,8 @@ button.secondary{background:var(--accent)}
 .grid{display:grid;gap:16px}
 .grid.cards{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))} */
 .pills{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 16px}
-.pill{padding:8px 14px;border-radius:999px;border:1px solid #808183;background:#707073;cursor:pointer}
-.pill.active{background:#2f2a3b;color:#fff}
+.pill{padding:8px 14px;border-radius:999px;border:1px solid #808183;background:#667eea;cursor:pointer}
+.pill.active{background:#ff5500;color:#fff}
 /* .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
 nav a{margin-right:16px}
 .center{display:grid;place-items:center;min-height:100vh;background:#f7f7fb}

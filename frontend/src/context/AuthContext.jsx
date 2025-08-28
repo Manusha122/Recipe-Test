@@ -21,16 +21,19 @@ export default function AuthProvider({ children }) {
 
   const login = async (email, password) => {
     const { data } = await API.post("/api/auth/login", { email, password });
+    if (data.token) localStorage.setItem("token", data.token);
     setUser(data.user);
   };
 
   const register = async (name, email, password) => {
     const { data } = await API.post("/api/auth/register", { name, email, password });
+    if (data.token) localStorage.setItem("token", data.token);
     setUser(data.user);
   };
 
   const logout = async () => {
     await API.post("/api/auth/logout");
+    localStorage.removeItem("token");
     setUser(null);
   };
 

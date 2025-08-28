@@ -262,7 +262,7 @@ export default function Dashboard() {
 
       <RecipeModal open={!!openId} onClose={() => setOpenId(null)} meal={selected} />
 
-      <style jsx>{`
+      <style>{`
         .dashboard-container {
           min-height: 100vh;
           position: relative;

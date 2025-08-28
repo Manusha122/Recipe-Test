@@ -102,7 +102,7 @@ export default function AuthPage() {
   const styles = {
     container: {
       minHeight: '100vh',
-      background: 'linear-gradient(135deg, #4c1d95 0%, #1e3a8a 50%, #312e81 100%)',
+      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
